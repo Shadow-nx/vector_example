@@ -80,7 +80,7 @@ void vector_t::push_back(int value)
 	  delete[] elements_;
 	  elements_=elements_1;
 	  size_++;
-	  if(capacity_==size_)
+	  if(capacity_>=size_)
 	  {
 	  	capacity_*=2;
 	  }
