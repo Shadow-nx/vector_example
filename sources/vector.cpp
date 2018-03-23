@@ -36,8 +36,17 @@ vector_t & vector_t::operator =(vector_t const & other)
 }
 
 bool vector_t::operator ==(vector_t const & other) const
-{
-	return false;
+{if (this->size_ == other.size_) {
+    for (int i = 0; i < size_; i++) {
+      if (this->elements_[i] != other.elements_[i]) {
+        return false;
+        break;
+      }
+    }
+    return true;
+  } else
+    return false;
+	
 }
 
 vector_t::~vector_t()
