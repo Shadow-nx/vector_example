@@ -91,7 +91,7 @@ void vector_t::pop_back()
 {
 	if(elements_)
 	{
-		if( capacity_/4 == size_)
+		if( capacity_/4 == size_-1)
 		{
 			capacity_/=2;
 			int *elements_1=new int[capacity_];
