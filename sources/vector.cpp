@@ -67,7 +67,7 @@ std::size_t vector_t::capacity() const
 void vector_t::push_back(int value)
 {
 	if(!elements_){
-	  int capacity_=1;	
+	  capacity_=1;	
 	  elements_=new int[capacity_];
 	  elements_[0]=value;
 	  size_++;	
