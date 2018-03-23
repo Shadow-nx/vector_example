@@ -105,6 +105,7 @@ void vector_t::pop_back()
 int & vector_t::operator [](std::size_t index)
 {
 	return elements_[index];
+}
 
 int vector_t::operator [](std::size_t index) const
 {
