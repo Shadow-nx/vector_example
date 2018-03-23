@@ -70,7 +70,7 @@ void vector_t::push_back(int value)
 	  capacity_=1;	
 	  elements_=new int[capacity_];
 	  elements_[0]=value;
-	  size_++;	
+	  size_=1;	
 	}
 	else{
 	  int *elements_1=new int[capacity_];
