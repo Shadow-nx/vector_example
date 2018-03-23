@@ -84,7 +84,7 @@ void vector_t::pop_back()
 		if( capacity_/4 >= size_)
 		{
 			capacity_/=2;
-			int elements_1=new elements[capacity_];
+			int elements_1=new int[capacity_];
 			for(unsigned int i=0; i < size_-1; i++)
 			  elemnts_1[i]=elements_[i];
 			delete[] elements_;
@@ -92,7 +92,7 @@ void vector_t::pop_back()
 			size_--;
 		}else 
 		{
-		   	int elements_1=new elements[capacity_];
+		   	int elements_1=new int[capacity_];
 			for(unsigned int i=0; i < size_-1; i++)
 			  elemnts_1[i]=elements_[i];
 			delete[] elements_;
